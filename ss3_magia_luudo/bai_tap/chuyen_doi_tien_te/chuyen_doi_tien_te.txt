@@ -1,0 +1,7 @@
+Begin
+     Input N (USD)
+while!(N>0 and N is a number)
+do Input N
+     VND = N * 23000
+     Display VND
+End
