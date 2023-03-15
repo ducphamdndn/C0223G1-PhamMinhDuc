@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" id="month1">
+<button type="button" onclick="songay1()">Tinh so ngay</button>
+<div id="result1"></div>
+<p>Và</p>
+<input type="number" id="month2">
+<button type="button" onclick="songay2()">Tinh so ngay</button>
+<div id="result2"></div>
+<script>
+    function songay1(){
+        let thang1 = document.getElementById("month1").value;
+        let tinhan;
+        switch (thang1){
+            case "2": tinhan = "Tháng 2 có 28 hoặc 29 ngày";
+            break;
+            case "4":
+            case "6":
+            case "9":
+            case "11":
+                tinhan = "Có 30 ngày";
+                break;
+            default:
+                tinhan = "Có 31 ngày"
+        }
+        document.getElementById("result1").innerText = tinhan;
+
+    }
+    function songay2(){
+        let thang2 = document.getElementById("month2").value;
+        let tinhan2;
+        switch (thang2){
+            case "2": tinhan2 = "Tháng 2 có 28 hoặc 29 ngày";
+            break;
+            case "4":
+            case "6":
+            case "9":
+            case "11":
+                tinhan2 = "Có 30 ngày";
+                break;
+            default:
+                tinhan2 = "Có 31 ngày"
+        }
+        document.getElementById("result2").innerText = tinhan2;
+
+    }
+
+
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = parseInt(prompt("nhap doanh so ban hang (USD)"));
+    let hh
+    if (a>=5000) {
+        hh = a * 10 / 100;
+        document.write("Hoa hồng bạn nhận được là (USD) :" + hh);
+    }else if (a>=2500) {
+        hh = a * 7 / 100;
+        document.write("Hoa hông bạn nhận được là (USD) :" + hh);
+    }else if (a>=1000) {
+        hh = a * 5 / 100;
+        document.write("Hoa hồng bạn nhận được là (USD) :" + hh);
+    }else {
+        document.write("doanh số bán hàng của bạn quá thấp, nên không có hoa hồng")
+    }
+</script>
+
+</body>
+</html>
