@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = (prompt("Mời nhập số điện sử dụng (kWh)")) * 1;
+    let money = 0;
+    if (a >= 401) {
+        money = a * 2927;
+    } else if (a >= 301) {
+        money = a * 2834;
+    } else if (a >= 201) {
+        money = a * 2536;
+    } else if (a >= 101) {
+        money = a * 2014;
+    } else if (a >= 51) {
+        money = a * 1734;
+    } else if (a >= 0) {
+        money = a * 1678;
+    } else {
+        document.write("Số điện phải là số dương, mời bạn nhấn F5 để nhập lại");
+        window.stop()
+    }
+    document.write("Số tiền bạn phải trả cho " + a + "(kWh) là: " + money.toLocaleString() + " đồng");
+</script>
+
+</body>
+</html>

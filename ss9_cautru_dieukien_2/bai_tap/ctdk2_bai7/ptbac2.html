@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Pt bậc 2 : ax^2 + bx + c = 0 (a != 0 )</h2>
+<span style="margin-left: 5px">Giá trị a</span>
+<span style="margin-left: 120px">Giá trị b</span>
+<span style="margin-left: 120px">Giá trị c</span><br>
+<input type="text" id="ga">
+<input type="text" id="gb">
+<input type="text" id="gc">
+<button type="button" onclick="tinh()">Tính</button>
+<div id="result">Kết quả</div>
+<script>
+    function tinh() {
+        let a = document.getElementById("ga").value*1;
+        let b = document.getElementById("gb").value*1;
+        let c = document.getElementById("gc").value*1;
+        let delta = b*b-4*a*c;
+        if (delta<0){
+            document.getElementById("result").innerHTML = "Phương trình vô nghiệm"
+        }else if (delta==0) {
+            document.getElementById("result").innerHTML = "Phương trình có 1 nghiệm kép x= "+-b/(2*a);
+        }else {
+            document.getElementById("result").innerHTML ="Phương trình có 2 nghiệm phân biệt :<br>"
+            +"x1 = "+ (-b+Math.sqrt(delta))/(2*a)+"<br>"
+            +"x2 = "+ (-b-Math.sqrt(delta))/(2*a);
+        }
+
+    }
+
+</script>
+</body>
+</html>
