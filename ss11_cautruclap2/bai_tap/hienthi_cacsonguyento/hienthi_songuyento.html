@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Hiển thị n số nguyên tố đầu tiên</title>
+</head>
+<body>
+<script>
+    let sl = parseInt(prompt("Mời nhập số lượng số nguyên tố"));
+    let n = 2; //n là số nguyên tố
+    let count = 0; //biến đếm
+    while (count<sl) {
+        let check = true;
+        for (let i=2;i<=Math.sqrt(n);i++){
+            if (n%i==0) {
+                check = false;
+                break;
+            }}
+        if (check){
+                document.write(n + "  " )
+            count++;
+            }n++;
+    }
+
+</script>
+
+
+
+</body>
+</html>

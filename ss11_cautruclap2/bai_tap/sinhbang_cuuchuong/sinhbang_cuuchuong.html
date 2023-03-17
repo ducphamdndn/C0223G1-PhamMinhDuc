@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table border="1">
+<script>
+
+    let i,j;
+    let bcc;
+    bcc = "<table border='1'>"
+    for (i = 1; i < 10; i++) {
+        bcc += "<tr>";
+        for (j = 2; j < 10; j++) {
+            bcc += "<td style='width: 150px'>" + (j + "x" + i + "=" + i * j) + "</td>";
+        }
+    }
+    document.write(bcc);
+
+
+</script>
+</table>
+</body>
+</html>
