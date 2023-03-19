@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="bai3"></div>
+<script>
+    let i, j;
+    let k = 5;
+    let r = 1;
+    let ketQua = ' ';
+    for (i = 1; i <= 5; i++) {
+        for (j = 1; j <= i; j++) {
+            ketQua += '*';
+        }
+        ketQua += '<br>';
+    }
+    ketQua += '<br>';
+    for (i = 5; i >= 1; i--) {
+        for (j = 1; j <= i; j++) {
+            ketQua += '*';
+        }
+        ketQua += '<br>';
+    }
+    ketQua += '<br>';
+    for (i = 1; i <= 5; i++) {
+        for (j = 1; j <= k; j++) {
+            ketQua += '&ensp;';
+            if (k < 0) {
+                break;
+            }
+        }
+        k -= 1;
+        for (j = 1; j <= i; j++) {
+            ketQua += '*';
+        }
+        ketQua += '<br>';
+    }
+    ketQua += '<br>';
+    for (i = 5; i >= 1; i--) {
+        for (j = 1; j <= r; j++) {
+            ketQua += '&ensp;';
+            if (r > 5) {
+                break;
+            }
+        }
+        r = r + 1;
+        for (j = 1; j <= i; j++) {
+            ketQua += '*';
+        }
+        ketQua += '<br>';
+    }
+    document.getElementById('bai3').innerHTML = ketQua;
+</script>
+</body>
+</html>
