@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    let find;
+    for (let i = 1; i <= 10; i++) {
+        arr[i] = +prompt('Nhập phần tử thứ ' + i);
+    }
+    let v = +prompt('Nhập phần tử vần tìm ');
+    find = arr.indexOf(v.toString());
+    if (find > -1) {
+        document.write(v + '&nbsp' + 'is in the array');
+    } else {
+        document.write(v + '&nbsp' + 'is not in the array');
+    }
+
+</script>
+</body>
+</html>

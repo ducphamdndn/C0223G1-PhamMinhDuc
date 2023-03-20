@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="nhap" style="width: 200px" type="text">
+<button type="button" onclick="doo()">Dịch</button>
+<p id="click"></p>
+<script>
+    function doo(){
+        let a = document.getElementById("nhap").value;
+        let eng= ["banana","apple"];
+        let vn=["chuoi","tao"];
+        for (let i=0;i<eng.length;i++){
+            if(a==eng[i]){
+                document.getElementById("click").innerText = "ket qua: " + vn[i];
+               break;
+            }else
+                document.getElementById("click").innerText = "tu dien chi co banana va apple"
+        }
+    }
+
+
+</script>
+
+</body>
+</html>
