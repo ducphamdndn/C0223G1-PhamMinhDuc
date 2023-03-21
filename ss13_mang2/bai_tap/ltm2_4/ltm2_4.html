@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let chuoi = prompt("Nhập vào các chuỗi kí tự ");
+    let dem = 0;
+    let a = chuoi.split('');
+    for (i = 0; i < a.length; i++) {
+        if (a[i] / a[i] != 1) {
+            dem++;
+        }
+    }
+    document.write("chuỗi vừa nhập là :" + chuoi + '<br>');
+    document.write("có" + dem + "từ trong chuỗi ");
+</script>
+</body>
+</html>

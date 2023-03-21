@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    for (let i = 1; i <= 10; i++) {
+        arr[i] = +prompt('Nhập phần tử thứ ' + i);
+    }
+    arr.reverse(function (arr, b) {
+        return b - arr;
+    })
+    document.write(arr);
+</script>
+</body>
+</html>
