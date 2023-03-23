@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="str">
+<p>Nhập ký tự cần kiểm tra:</p>
+<button onclick="countChar()">Đếm số lần xuất hiện</button>
+<p id="result"></p>
+
+<script>
+    function countChar() {
+        let str = document.getElementById("str").value;
+        let c = prompt("Nhập ký tự cần kiểm tra:");
+        let count = 0;
+        for (let i = 0; i < str.length; i++) {
+            if (str.charAt(i) == c) {
+                count++;
+            }
+        }
+        if (count > 0) {
+            document.getElementById("result").innerHTML = "Số lần xuất hiện của ký tự '" + c + "' trong chuỗi là " + count;
+        } else {
+            document.getElementById("result").innerHTML = "Ký tự '" + c + "' không xuất hiện trong chuỗi";
+        }
+    }
+</script>
+</body>
+</html>
