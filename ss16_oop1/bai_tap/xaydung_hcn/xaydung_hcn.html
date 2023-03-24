@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rectangle Object</title>
+  <meta charset="utf-8">
+</head>
+<body>
+<canvas id="myCanvas" width="500" height="500"></canvas>
+<script>
+  class Rectangle {
+    constructor(length, width) {
+      this.length = length;
+      this.width = width;
+    }
+    getArea() {
+      return this.length * this.width;
+    }
+    getPerimeter() {
+      return 2 * (this.length + this.width);
+    }
+    draw() {
+      let canvas = document.getElementById("myCanvas");
+      let ctx = canvas.getContext("2d");
+      ctx.fillStyle = "blue";
+      ctx.fillRect(10, 10, this.length, this.width);
+    }
+  }
+  let rect = new Rectangle(400, 200);
+  rect.draw();
+  console.log("Area: "+rect.getArea());
+  console.log("Perimeter: "+rect.getPerimeter());
+  rect.length=500;
+  rect.width=300;
+  console.log("Area: "+rect.getArea());
+  console.log("Perimeter: "+rect.getPerimeter());
+
+</script>
+</body>
+</html>

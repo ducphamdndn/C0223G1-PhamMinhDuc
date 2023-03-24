@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Temperature {
+        constructor(tempc) {
+            this.tempc=tempc;
+        }
+        getCsf() {
+            return (this.tempc*1.8)+32;
+        }
+        getCsk() {
+            return this.tempc+273.15;
+        }
+    }
+    let temp= new Temperature(25);
+    console.log("Độ F: ",temp.getCsf());
+    console.log("Độ K: ",temp.getCsk());
+</script>
+
+</body>
+</html>
