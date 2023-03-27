@@ -7,8 +7,14 @@
 <body>
 <script>
     let na=['o','u','i','a','e'];
-    let pa=['O','U','I','A','E'];
-    let input=prompt("Mời nhập 1 ký tự tiếng anh");
+    let ip=prompt("Mời nhập 1 ký tự tiếng anh");
+    function CheckNa(char){
+    for (let i=0;i<na.length;i++){
+    if (ip===na[i]){
+        return na[i]+" là nguyên âm";
+    }}return ip+" là phụ âm";
+    }document.write(CheckNa(ip));
+
 </script>
 
 </body>

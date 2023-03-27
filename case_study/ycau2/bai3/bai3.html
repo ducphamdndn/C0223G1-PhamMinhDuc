@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tam giác cân rỗng</title>
+</head>
+<body>
+<script>
+    let h=5;
+    let result="";
+    for (let i=1;i<=h;i++){
+        for (let j=0;j<=h-i;j++){
+            result +=" ";
+        }for (let k=1;k<=2*i-1;k++){
+            if (k==1 || k==2*i-1 || i==h){
+                result +="*";
+            }else {
+                result +=" ";
+            }
+        }result +="\n";
+    }console.log(result);
+</script>
+
+</body>
+</html>
