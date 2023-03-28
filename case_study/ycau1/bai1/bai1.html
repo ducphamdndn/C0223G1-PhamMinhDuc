@@ -6,19 +6,19 @@
 </head>
 <body>
 <script>
-  let salary=parseInt(prompt("Mời nhập số lương trước thuế:"));
-  let result=0;
-  if (salary>=15){
-    result=salary*80/100;
-  }else if (salary>=7){
-    result=salary*90/100;
-  }else if (salary>0){
-    result=salary*95/100;
-  }else {
-      document.write("luơng trước thuế của bạn phải lớn hơn 0");
-    stop()
-  }
-  document.write("Lương sau thuế của bạn là: "+result);
+    let salary = parseInt(prompt("Mời nhập số lương trước thuế:"));
+    let result = 0;
+    if (salary >= 15) {
+        result = salary * 80 / 100;
+    } else if (salary >= 7) {
+        result = salary * 90 / 100;
+    } else if (salary > 0) {
+        result = salary * 95 / 100;
+    } else {
+        document.write("luơng trước thuế của bạn phải lớn hơn 0");
+        stop()
+    }
+    document.write("Lương sau thuế của bạn là: " + result);
 </script>
 
 </body>
